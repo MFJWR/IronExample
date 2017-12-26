@@ -12,6 +12,15 @@ impl middleware::Handler for Hello {
     }
 }
 
+fn hoge(_: &mut Request) -> IronResult<Response> {
+    Ok(Response::with((status::Ok, "hoge")))
+}
+
 fn main() {
-    Iron::new(Hello).http("0.0.0.0:3000").unwrap();
+
+    let mut router = Router::new();
+    router.get("/hello", Hello, "hello");
+    router.post("/hoge", hoge, "hoge");
+
+    Iron::new(router).http("0.0.0.0:3000").unwrap();
 }
