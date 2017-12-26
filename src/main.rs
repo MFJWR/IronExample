@@ -1,5 +1,8 @@
 extern crate iron;
+extern crate router;
+
 use iron::{Iron, IronResult, Request, Response, status, middleware};
+use router::Router;
 
 struct Hello;
 

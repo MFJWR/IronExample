@@ -5,3 +5,4 @@ authors = ["Masaki Fujiwara <m-fujiwara@seesaa.co.jp>"]
 
 [dependencies]
 iron = "0.6.0"
+router = "*"
