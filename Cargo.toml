@@ -1,6 +1,7 @@
 [package]
-name = "IronExample"
+name = "iron_example"
 version = "0.1.0"
-authors = ["MFJWR <chanpie2007@gmail.com>"]
+authors = ["Masaki Fujiwara <m-fujiwara@seesaa.co.jp>"]
 
 [dependencies]
+iron = "0.6.0"
