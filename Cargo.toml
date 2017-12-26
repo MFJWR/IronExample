@@ -1,0 +1,6 @@
+[package]
+name = "IronExample"
+version = "0.1.0"
+authors = ["MFJWR <chanpie2007@gmail.com>"]
+
+[dependencies]
